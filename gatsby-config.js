@@ -6,5 +6,12 @@ module.exports = {
     title: `RathamaManagerUI`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-sitemap"]
+  plugins: [{
+    resolve: 'gatsby-plugin-sass',
+    options: {
+      implementation: require('sass'),
+    },
+  },
+  "gatsby-plugin-sitemap",
+  'gatsby-plugin-react-helmet']
 };
